@@ -25,10 +25,13 @@ dockitems_remove:
   - Pages
   - "App Store"
 
-# dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+dockitems_persist:
+- name: "Google Chrome"
+  path: "/Applications/Google Chrome.app"
+  pos: 0
+- name: "Visual Studio Code"
+  path: "/Applications/Visual Studio Code.app/"
+  pos: 1
 
 dotfiles_repo: https://github.com/ryanzhou7/dotfiles.git
 dotfiles_repo_accept_hostkey: true
@@ -44,17 +47,6 @@ homebrew_cask_apps:
   - docker
   - google-chrome
   - visual-studio-code
-
-configure_dock: true
-dockitems_remove:
-  - Launchpad
-  - TV
-  - Podcasts
-  - "App Store"
-dockitems_persist:
-  - name: "Sublime Text"
-    path: "/Applications/Sublime Text.app/"
-    pos: 5
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false

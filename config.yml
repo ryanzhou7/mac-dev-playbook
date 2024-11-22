@@ -1,0 +1,60 @@
+configure_dotfiles: true
+configure_terminal: false
+configure_osx: false
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Freeform
+  - TV
+  - Music
+  - News
+  - Keynote
+  - Numbers
+  - Pages
+  - "App Store"
+
+# dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+dotfiles_repo: https://github.com/ryanzhou7/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+
+homebrew_installed_packages: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - google-chrome
+  - visual-studio-code
+
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - "App Store"
+dockitems_persist:
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 5
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
